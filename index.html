@@ -1,143 +1,124 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portofolio - Ilham Fhahrozi</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Ilham Fhahrozi</title>
+  <meta name="description" content="Portfolio singkat Ilham Fhahrozi — Mahasiswa RPL" />
+
   <style>
-    body {
-      font-family: "Segoe UI", Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f3f5f9;
-      color: #333;
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #f9fafb, #e0f2fe);
+      color:#0f172a;
     }
-
-    /* ===== HEADER ===== */
-    header {
-      background-color: #004aad;
-      color: white;
-      padding: 20px 40px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    .container{
+      max-width:900px;
+      margin:20px auto;
+      padding:20px;
     }
-
-    header img {
-      width: 100px;
-      height: 130px;
-      border-radius: 10px;
-      border: 2px solid #fff;
-      object-fit: cover;
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      margin-bottom:30px;
     }
-
-    header h1 {
-      margin: 0;
-      font-size: 26px;
+    .brand{
+      display:flex;
+      gap:15px;
+      align-items:center;
     }
-
-    header p {
-      margin: 4px 0 0 0;
-      font-size: 15px;
+    .brand img{
+      width:80px;
+      height:80px;
+      border-radius:50%;
+      object-fit:cover;
+      border:3px solid #2563eb;
     }
-
-    /* ===== ISI UTAMA ===== */
-    main {
-      max-width: 900px;
-      margin: 40px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    h1{margin:0; font-size:22px}
+    p.lead{margin:2px 0 0; color:#475569; font-size:14px}
+    nav a{
+      margin-left:15px;
+      text-decoration:none;
+      color:#2563eb;
+      font-weight:bold;
     }
-
-    section {
-      margin-bottom: 30px;
+    .card{
+      background:#ffffff;
+      border-radius:12px;
+      padding:20px;
+      margin-bottom:20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
     }
-
-    h2 {
-      color: #004aad;
-      border-bottom: 2px solid #004aad;
-      padding-bottom: 5px;
+    h2{margin-top:0; font-size:18px}
+    .projects article{
+      margin-bottom:15px;
+      padding:10px;
+      border:1px solid #e2e8f0;
+      border-radius:8px;
     }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    li {
-      margin-bottom: 8px;
-    }
-
-    /* ===== FOOTER ===== */
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: #004aad;
-      color: white;
-      margin-top: 50px;
-    }
-
-    a {
-      color: #004aad;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
+    footer{
+      text-align:center;
+      font-size:13px;
+      color:#64748b;
+      margin-top:30px;
     }
   </style>
 </head>
 <body>
-  <!-- ===== BAGIAN HEADER ===== -->
-  <header>
-   <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 40px;">
-  <div>
-    <h1>Halo, saya Ilham Fhahrozi</h1>
-    <p>Berani berubah pasti dapat proyek!</p>
-  </div>
-  <img src="IMG_20241127_061336.jpg" alt="Foto Profil Ilham" width="160" style="border-radius: 15px; box-shadow: 0 0 10px rgba(0,0,0,0.2);">
-</div>
- <!-- ===== ISI HALAMAN ===== -->
-  <main>
-    <!-- Tentang Saya -->
-    <section>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <!-- Ganti src dengan path foto profilmu -->
+        <img src="assets/profile.jpg" alt="Foto Ilham Fhahrozi">
+        <div>
+          <h1>Ilham Fhahrozi</h1>
+          <p class="lead">Mahasiswa RPL</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">Tentang</a>
+        <a href="#projects">Proyek</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+    </header>
+
+    <section id="about" class="card">
       <h2>Tentang Saya</h2>
-      <p>Halo! Saya Ilham, seorang mahasiswa yang sedang belajar pengembangan web menggunakan HTML, CSS, dan JavaScript. Saya senang membuat desain sederhana dan ingin mengembangkan kemampuan menjadi full stack developer.</p>
+      <p>
+        Halo! Saya <b>Ilham Fhahrozi</b>, seorang mahasiswa Rekayasa Perangkat Lunak (RPL).
+        Saya memiliki minat dalam pengembangan web, analisis data, dan teknologi digital.
+      </p>
     </section>
 
-    <!-- Skill -->
-    <section>
-      <h2>Keahlian</h2>
-      <ul>
-        <li>💻 HTML, CSS, JavaScript</li>
-        <li>⚙️ GitHub & Version Control</li>
-        <li>🎨 Desain UI sederhana</li>
-      </ul>
-    </section>
-
-    <!-- Proyek -->
-    <section>
+    <section id="projects" class="card">
       <h2>Proyek</h2>
-      <ul>
-        <li><b>Website Profil</b> – Halaman HTML pertama saya di GitHub</li>
-        <li><b>Landing Page Produk</b> – Desain promosi produk sederhana</li>
-      </ul>
+      <div class="projects">
+        <article>
+          <h3>Portal Berita Kampus</h3>
+          <p>Sebuah website berita sederhana dengan fitur posting, kategori, dan admin panel. 
+          <br><small>Teknologi: HTML, CSS, PHP, MySQL</small></p>
+        </article>
+
+        <article>
+          <h3>Aplikasi Manajemen Tugas</h3>
+          <p>Aplikasi CRUD sederhana untuk mencatat jadwal kuliah dan tugas mahasiswa.
+          <br><small>Teknologi: JavaScript, LocalStorage</small></p>
+        </article>
+      </div>
     </section>
 
-    <!-- Kontak -->
-    <section>
+    <section id="contact" class="card">
       <h2>Kontak</h2>
       <p>Email: <a href="mailto:ilhamfhahrozi@gmail.com">ilhamfhahrozi@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/ilhamfhahrozi">github.com/ilhamfhahrozi</a></p>
+      <p>GitHub: <a href="https://github.com/username" target="_blank">github.com/username</a></p>
     </section>
-  </main>
 
-  <!-- ===== FOOTER ===== -->
-  <footer>
-    <p>© 2025 Ilham Fhahrozi — Dibuat untuk latihan portofolio HTML</p>
-  </footer>
+    <footer>
+      © 2025 Ilham Fhahrozi — Dibuat dengan HTML & CSS
+    </footer>
+  </div>
 </body>
 </html>
+
