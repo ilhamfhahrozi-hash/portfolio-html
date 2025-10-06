@@ -1,124 +1,66 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Portfolio — Ilham Fhahrozi</title>
-  <meta name="description" content="Portfolio singkat Ilham Fhahrozi — Mahasiswa RPL" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Ilham Fhahrozi</title>
   <style>
-    body{
-      margin:0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(180deg, #f9fafb, #e0f2fe);
-      color:#0f172a;
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #2193b0, #6dd5ed);
+      margin: 0;
+      padding: 0;
+      color: #333;
     }
-    .container{
-      max-width:900px;
-      margin:20px auto;
-      padding:20px;
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+      padding: 30px;
+      text-align: center;
     }
-    header{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      margin-bottom:30px;
+    .profile-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #2193b0;
     }
-    .brand{
-      display:flex;
-      gap:15px;
-      align-items:center;
+    h1 {
+      margin-top: 20px;
+      font-size: 28px;
+      color: #2193b0;
     }
-    .brand img{
-      width:80px;
-      height:80px;
-      border-radius:50%;
-      object-fit:cover;
-      border:3px solid #2563eb;
+    p {
+      font-size: 16px;
+      line-height: 1.6;
     }
-    h1{margin:0; font-size:22px}
-    p.lead{margin:2px 0 0; color:#475569; font-size:14px}
-    nav a{
-      margin-left:15px;
-      text-decoration:none;
-      color:#2563eb;
-      font-weight:bold;
-    }
-    .card{
-      background:#ffffff;
-      border-radius:12px;
-      padding:20px;
-      margin-bottom:20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    }
-    h2{margin-top:0; font-size:18px}
-    .projects article{
-      margin-bottom:15px;
-      padding:10px;
-      border:1px solid #e2e8f0;
-      border-radius:8px;
-    }
-    footer{
-      text-align:center;
-      font-size:13px;
-      color:#64748b;
-      margin-top:30px;
+    .email {
+      margin-top: 15px;
+      padding: 10px;
+      background: #2193b0;
+      color: white;
+      border-radius: 8px;
+      display: inline-block;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <header>
-      <div class="brand">
-        <!-- Ganti src dengan path foto profilmu -->
-        <img src="assets/profile.jpg" alt="Foto Ilham Fhahrozi">
-        <div>
-          <h1>Ilham Fhahrozi</h1>
-          <p class="lead">Mahasiswa RPL</p>
-        </div>
-      </div>
-      <nav>
-        <a href="#about">Tentang</a>
-        <a href="#projects">Proyek</a>
-        <a href="#contact">Kontak</a>
-      </nav>
-    </header>
-
-    <section id="about" class="card">
-      <h2>Tentang Saya</h2>
-      <p>
-        Halo! Saya <b>Ilham Fhahrozi</b>, seorang mahasiswa Rekayasa Perangkat Lunak (RPL).
-        Saya memiliki minat dalam pengembangan web, analisis data, dan teknologi digital.
-      </p>
-    </section>
-
-    <section id="projects" class="card">
-      <h2>Proyek</h2>
-      <div class="projects">
-        <article>
-          <h3>Portal Berita Kampus</h3>
-          <p>Sebuah website berita sederhana dengan fitur posting, kategori, dan admin panel. 
-          <br><small>Teknologi: HTML, CSS, PHP, MySQL</small></p>
-        </article>
-
-        <article>
-          <h3>Aplikasi Manajemen Tugas</h3>
-          <p>Aplikasi CRUD sederhana untuk mencatat jadwal kuliah dan tugas mahasiswa.
-          <br><small>Teknologi: JavaScript, LocalStorage</small></p>
-        </article>
-      </div>
-    </section>
-
-    <section id="contact" class="card">
-      <h2>Kontak</h2>
-      <p>Email: <a href="mailto:ilhamfhahrozi@gmail.com">ilhamfhahrozi@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/username" target="_blank">github.com/username</a></p>
-    </section>
-
-    <footer>
-      © 2025 Ilham Fhahrozi — Dibuat dengan HTML & CSS
-    </footer>
+    <!-- Ganti path foto sesuai lokasi file di project GitHub -->
+    <img src="IMG_20241127_061336.jpg" alt="Foto Profil Ilham" class="profile-img">
+    
+    <h1>Ilham Fhahrozi</h1>
+    <p><b>Mahasiswa RPL</b></p>
+    <p>Saya adalah mahasiswa Rekayasa Perangkat Lunak yang memiliki minat dalam teknologi, pemrograman, dan pengembangan web.</p>
+    
+    <div class="email">
+      Email: ilhamfhahrozi@gmail.com
+    </div>
   </div>
 </body>
 </html>
+
 
