@@ -7,60 +7,74 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #2193b0, #6dd5ed);
+      background: linear-gradient(135deg, #2193b0, #6dd5ed);
       margin: 0;
       padding: 0;
-      color: #333;
     }
     .container {
-      max-width: 800px;
+      max-width: 600px;
       margin: 50px auto;
-      background: #fff;
+      background: white;
       border-radius: 15px;
-      box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+      box-shadow: 0px 8px 25px rgba(0,0,0,0.2);
       padding: 30px;
       text-align: center;
     }
     .profile-img {
-      width: 200px;
-      height: 200px;
+      width: 180px;
+      height: 180px;
       border-radius: 50%;
       object-fit: cover;
       border: 5px solid #2193b0;
+      margin-bottom: 15px;
     }
     h1 {
-      margin-top: 20px;
       font-size: 28px;
       color: #2193b0;
+      margin: 10px 0;
+    }
+    h3 {
+      color: #555;
+      margin: 5px 0 20px;
     }
     p {
       font-size: 16px;
+      color: #333;
       line-height: 1.6;
     }
     .email {
-      margin-top: 15px;
-      padding: 10px;
+      margin-top: 20px;
+      padding: 10px 20px;
       background: #2193b0;
       color: white;
+      font-weight: bold;
       border-radius: 8px;
       display: inline-block;
+      text-decoration: none;
+    }
+    .email:hover {
+      background: #17697a;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- Ganti path foto sesuai lokasi file di project GitHub -->
-    <img src="IMG_20241127_061336.jpg" alt="Foto Profil Ilham" class="profile-img">
-    
+    <!-- Foto profil -->
+    <img src="IMG_20241127_061336.jpg" alt="Foto Profil Ilham Fhahrozi" class="profile-img">
+
+    <!-- Identitas -->
     <h1>Ilham Fhahrozi</h1>
-    <p><b>Mahasiswa RPL</b></p>
-    <p>Saya adalah mahasiswa Rekayasa Perangkat Lunak yang memiliki minat dalam teknologi, pemrograman, dan pengembangan web.</p>
-    
-    <div class="email">
-      Email: ilhamfhahrozi@gmail.com
-    </div>
+    <h3>Mahasiswa RPL</h3>
+    <p>
+      Saya adalah mahasiswa Rekayasa Perangkat Lunak yang memiliki minat dalam teknologi, 
+      pemrograman, dan pengembangan web. 
+      Profil ini dibuat untuk menampilkan identitas saya secara sederhana dan profesional.
+    </p>
+
+    <!-- Email -->
+    <a href="mailto:ilhamfhahrozi@gmail.com" class="email">
+      ✉ ilhamfhahrozi@gmail.com
+    </a>
   </div>
 </body>
 </html>
-
-
